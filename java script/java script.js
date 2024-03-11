@@ -1,29 +1,3 @@
-function change() {
-  document.getElementById("1").innerHTML = "In the name of God";
-  document.getElementById("2").innerHTML = "Welcome to my first website";
-  document.getElementById("3").innerHTML = "Article";
-  document.getElementById("4").innerHTML = "Email";
-  document.getElementById("5").innerHTML = "Call me !";
-  document.getElementById("6").innerHTML = "Telegram";
-  document.getElementById("7").innerHTML = "WhatsApp";
-  document.getElementById("8").innerHTML = "Calculator";
-  document.getElementById("9").innerHTML = "Work samples";
-  document.getElementById("10").innerHTML = "Resume";
-}
-
-function change_back() {
-  document.getElementById("1").innerHTML = "به نام خدا";
-  document.getElementById("2").innerHTML = "به اولین وبسایت من خوش آمدید";
-  document.getElementById("3").innerHTML = "مقاله";
-  document.getElementById("4").innerHTML = "ایمیل";
-  document.getElementById("5").innerHTML = "شماره تماس";
-  document.getElementById("6").innerHTML = "تلگرام";
-  document.getElementById("7").innerHTML = "واتساپ";
-  document.getElementById("8").innerHTML = "ماشین حساب";
-  document.getElementById("9").innerHTML = "نمونه کار";
-  document.getElementById("10").innerHTML = "رزومه";
-}
-
 function dark() {
   document.body.style.backgroundColor = "#353535";
   document.body.style.color = "#ffffff";
