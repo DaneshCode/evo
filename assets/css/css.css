@@ -73,13 +73,13 @@ button {
 button:hover {
   background-image: linear-gradient(
     90deg,
-    #53cbef 0%,
-    #dcc66c 50%,
-    #ffa3b6 75%,
-    #53cbef 100%
+    #6a3093 0%,
+    #a044ff 50%,
+    #1f4037 75%,
+    #6a3093 100%
   );
   animation: slidernbw 5s linear infinite;
-  color: #000;
+  color: #fff;
 }
 
 @keyframes slidernbw {
@@ -103,13 +103,13 @@ a.button {
 a.button:hover {
   background-image: linear-gradient(
     90deg,
-    #53cbef 0%,
-    #dcc66c 50%,
-    #ffa3b6 75%,
-    #53cbef 100%
+    #6a3093 0%,
+    #a044ff 50%,
+    #1f4037 75%,
+    #6a3093 100%
   );
   animation: slidernbw 5s linear infinite;
-  color: #000;
+  color: #fff;
 }
 
 @keyframes slidernbw {
@@ -117,8 +117,6 @@ a.button:hover {
     background-position: 20vw;
   }
 }
-
-
 
 #menu {
   position: absolute;
