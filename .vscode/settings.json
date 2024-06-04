@@ -6,5 +6,9 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "vscode-edge-devtools.webhintInstallNotification": true,
-  "extensions.autoUpdate": false
+  "extensions.autoUpdate": false,
+  "git.openRepositoryInParentFolders": "always",
+  "git.autofetch": true,
+  "extensions.autoCheckUpdates": false,
+  "update.mode": "manual"
 }
