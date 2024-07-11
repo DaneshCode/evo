@@ -1,7 +1,7 @@
 {
   "files.autoSave": "afterDelay",
   "editor.minimap.enabled": false,
-  "editor.fontSize": 16,
+  "editor.fontSize": 18,
   "workbench.iconTheme": "material-icon-theme",
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
