@@ -1,91 +1,91 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #fff;
-    color: #333;
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: #fff;
-  }
-  .header .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .header nav {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+}
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.header nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
 
-  .header nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-  }
-  .header .get-app {
-    border: 2px solid rgba(255, 68, 0, 0.788);
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    color: rgba(255, 68, 0, 0.788);
-    font-weight: 600;
-  }
-  .hero {
-    display: inline-block;
-    margin-left: 50px;
-    margin-top: 90px;
-    height: calc(
-      100vh - 100px
-    ); /* Adjusting height to take header into account */
-    text-align: rtl;
-    padding: 20px;
-    background: #fff;
-  }
-  .hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-  }
-  .hero p {
-    font-size: 18px;
-    margin-bottom: 40px;
-    text-shadow: 0 0 20px rgba(255, 68, 0, 0.788);
-  }
-  .hero .btn {
-    background: rgba(255, 68, 0, 0.788);
-    color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: 600;
-  }
-  .courses {
-    display: flex;
-    justify-content: center;
-    padding: 50px 20px;
-    background: #f4f4f9;
-  }
-  .course {
-    background: #fff;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  .course img {
-    border-radius: 10px;
-    max-width: 100%;
-  }
-  .course h3 {
-    margin: 20px 0 10px;
-  }
-  .course p {
-    font-size: 14px;
-    color: #777;
-  }
+.header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.header .get-app {
+  border: 2px solid rgba(255, 68, 0, 0.788);
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: rgba(255, 68, 0, 0.788);
+  font-weight: 600;
+}
+.hero {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 90px;
+  height: calc(
+    100vh - 100px
+  ); /* Adjusting height to take header into account */
+  text-align: rtl;
+  padding: 20px;
+  background: #fff;
+}
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 20px rgba(255, 68, 0, 0.788);
+}
+.hero .btn {
+  background: rgba(255, 68, 0, 0.788);
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+}
+.courses {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  background: #f4f4f9;
+}
+.course {
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.course img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+.course h3 {
+  margin: 20px 0 10px;
+}
+.course p {
+  font-size: 14px;
+  color: #777;
+}
