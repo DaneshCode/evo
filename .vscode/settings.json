@@ -5,10 +5,11 @@
   "workbench.iconTheme": "material-icon-theme",
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "vscode-edge-devtools.webhintInstallNotification": true,
   "extensions.autoUpdate": false,
   "git.openRepositoryInParentFolders": "always",
   "git.autofetch": true,
   "extensions.autoCheckUpdates": false,
-  "update.mode": "manual"
+  "update.mode": "manual",
+  "editor.linkedEditing": true,
+  "cSpell.language": "en,en-GB,en-US,lorem,fa,fa-IR",
 }
