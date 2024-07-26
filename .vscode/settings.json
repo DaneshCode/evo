@@ -1,27 +1,14 @@
 {
   "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.fontSize": 18,
   "workbench.iconTheme": "material-icon-theme",
-  "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "extensions.autoUpdate": false,
-  "git.openRepositoryInParentFolders": "always",
-  "git.autofetch": true,
   "extensions.autoCheckUpdates": false,
   "update.mode": "manual",
+  "git.autofetch": true,
   "editor.linkedEditing": true,
-  "cSpell.language": "en,en-GB,en-US,lorem,fa,fa-IR",
-  "editor.quickSuggestions": {
-    "other": true,
-    "comments": true,
-    "strings": true
-  },
-  "editor.suggestOnTriggerCharacters": true,
-  "editor.suggestSelection": "recentlyUsedByPrefix",
-  "editor.wordBasedSuggestions": true,
-  "editor.parameterHints.enabled": true,
-  "editor.snippetSuggestions": "top",
-  "editor.acceptSuggestionOnEnter": "smart",
-  "editor.inlineSuggest.enabled": true
+  "cSpell.language": "en,en-GB,en-US,lorem,fa,fa-IR"
 }
