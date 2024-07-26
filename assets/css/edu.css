@@ -1,0 +1,27 @@
+h1,
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+div {
+  text-align: center;
+}
+
+.box1 {
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-clip: border-box;
+  background-attachment: scroll;
+}
+
+#example1 {
+  border: 1px solid;
+  margin: 50px;
+}

@@ -53,7 +53,9 @@ input {
 }
 
 h1:before,
-h1:after {
+h1:after,
+h3:before,
+h3:after {
   content: " | ";
   color: red;
 }

@@ -12,4 +12,16 @@
   "update.mode": "manual",
   "editor.linkedEditing": true,
   "cSpell.language": "en,en-GB,en-US,lorem,fa,fa-IR",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.wordBasedSuggestions": true,
+  "editor.parameterHints.enabled": true,
+  "editor.snippetSuggestions": "top",
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.inlineSuggest.enabled": true
 }
