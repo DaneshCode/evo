@@ -11,6 +11,11 @@ div {
   text-align: center;
 }
 
+.border {
+  border: 1px solid;
+  margin: 50px;
+}
+
 .box1 {
   text-align: center;
   background-position: center;
@@ -19,9 +24,4 @@ div {
   background-origin: border-box;
   background-clip: border-box;
   background-attachment: scroll;
-}
-
-#example1 {
-  border: 1px solid;
-  margin: 50px;
 }
