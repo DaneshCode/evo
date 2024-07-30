@@ -1,0 +1,77 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "B-nazanin";
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: "B-nazanin";
+  src: url(../assets/css/Fonts/B-NAZANIN.TTF);
+}
+
+@font-face {
+  font-family: "Lalezar";
+  src: url(../assets/css/Fonts/Lalezar-Regular.ttf);
+}
+
+div.header {
+  text-align: center;
+  background-image: url(../assets/images/2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+}
+
+ul#header {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul#header li {
+  display: inline-block;
+  margin: 15px;
+  padding-top: 30px;
+}
+
+ul#header li a {
+  text-decoration: none;
+  color: white;
+}
+
+ul#header li a:hover {
+  color: orange;
+}
+
+div.header h1 {
+  font-size: 60px;
+  font-family: "Lalezar";
+  color: white;
+  margin: auto;
+  text-align: center;
+  padding-top: 160px;
+  padding-bottom: 30px;
+}
+div.header p {
+  display: inline-block;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 55px; /* for horizontal center */
+  line-height: 55px; /* for horizontal center */
+  color: white;
+  border: 2px solid gray;
+  border-radius: 100px;
+  padding: 0px 30px 0px 30px; /* for padding right and left */
+}
+
+div.header h1 span {
+  color: orange;
+}

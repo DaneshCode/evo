@@ -3,20 +3,17 @@ h3 {
   text-align: center;
 }
 
-p {
-  text-align: center;
-}
-
-div {
-  text-align: center;
-}
-
 .border {
+  display: inline-block;
   border: 1px solid;
   margin: 50px;
+  padding: 0px 100px 0px 100px;
 }
 
 .box1 {
+  display: block; /*for center an image */
+  margin-left: auto; /*for center an image */
+  margin-right: auto; /*for center an image */
   text-align: center;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,3 +22,5 @@ div {
   background-clip: border-box;
   background-attachment: scroll;
 }
+
+

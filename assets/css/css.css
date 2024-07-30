@@ -3,7 +3,12 @@ body {
   color: black;
   margin: auto;
   text-align: center;
-  font-family: "B Nazanin", "IRANSans", Arial, sans-serif;
+  font-family: "B-nazanin";
+}
+
+@font-face {
+  font-family: "B-nazanin";
+  src: url(./Fonts/B-NAZANIN.TTF);
 }
 
 #themeButton_1 {
