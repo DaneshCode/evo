@@ -32,20 +32,26 @@ div.header {
 }
 
 ul#header {
+  position: fixed;
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+  left: 50%; 
+  top: 5px; 
+  transform: translateX(-50%); /* جابجایی برای مرکز کردن */
+  background-color: rgba(0, 0, 0, 0.4); 
+  padding: 0;
+  margin: 0;
+  z-index: 1000; /* برای قرارگیری بالای سایر محتویات */
 }
+
 
 ul#header li {
   display: inline-block;
-  margin: 15px;
-  padding-top: 30px;
 }
 
 ul#header li a {
   text-decoration: none;
   color: white;
+  padding: 15px;
 }
 
 ul#header li a:hover {
