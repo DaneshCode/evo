@@ -10,5 +10,6 @@
   "update.mode": "manual",
   "git.autofetch": true,
   "editor.linkedEditing": true,
-  "cSpell.language": "en,en-GB,en-US,lorem,fa,fa-IR"
+  "cSpell.language": "en,en-GB,en-US,lorem,fa,fa-IR",
+  "livePreview.defaultPreviewPath": "/text.html"
 }

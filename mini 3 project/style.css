@@ -4,18 +4,16 @@
   box-sizing: border-box;
 }
 .header {
-  display: block;
   background-color: white;
-  position: fixed;
-  top: 0px;
   width: 100%;
-  height: 70px;
-
-  padding: 8px 15px 0px 20px;
+  height: 45px;
+  /* padding: 8px 15px 0px 20px; */
 }
 
-.logo {
+.header .logo {
   position: relative;
+  top: 8px;
+  left: 10px;
   z-index: 1;
   width: 50px;
   height: 50px;
@@ -32,9 +30,9 @@ a:hover {
 a.button {
   background-color: #04aa6d;
   color: white;
-  padding: 8px 5px 10px 5px;
+  /* padding: 8px 5px 10px 5px; */
   border-radius: 50px;
-  margin: 10px 0px 10px 10px;
+  /* margin: 10px 0px 10px 10px; */
 }
 
 a.button:hover {
@@ -42,41 +40,42 @@ a.button:hover {
   color: white;
 }
 
-.right a {
+.header .right a {
   position: relative;
-  bottom: 15px;
+  bottom: 5px;
+  padding-right: 20px;
+}
+
+.header .left a {
+  position: relative;
+  top: 10px;
   padding-left: 20px;
 }
 
-.left a {
-  position: relative;
-  /* bottom: 10px; */
-  padding-left: 20px;
-}
-
-.left i {
+.header .left i {
   padding-left: 3px;
   color: black;
 }
 
-.right {
+.header .right {
   position: relative;
   direction: rtl;
   bottom: 21px;
 }
 
 #login {
+  margin-right: 10px;
   padding: 10px 30px 10px 30px;
 }
 
-.right i {
+.header .right i {
   position: relative;
-  bottom: 15px;
-  padding: 0px 10px 0px 0px;
+  bottom: 5px;
+  padding: 0px 15px 0px 0px;
 }
 
 .section1 {
-  background-color: #0d1721e5;
+  background-color: #282a35;
   width: 100%;
   height: 700px;
 }
@@ -90,7 +89,7 @@ a.button:hover {
 }
 .section1 p {
   position: relative;
-  top: 300px;
+  top: 260px;
   left: 228px;
   font-size: 18px;
   color: white;
@@ -120,22 +119,22 @@ a.button:hover {
   background-color: white;
 }
 
-.right2 {
+.section1 .right2 {
   display: inline-block;
   position: absolute;
   left: 850px;
   bottom: 140px;
   background-color: #e7e9eb;
-  width: 450px;
+  width: 470px;
   height: 470px;
   border-radius: 10px;
 }
-.right2 div {
+.section1 .right2 div {
   margin-top: 25px;
   padding: 0px 20px 0px 20px;
 }
 
-.right2 h3 {
+.section1 .right2 h3 {
   padding-left: 20px;
   display: block;
   margin-top: 25px;
