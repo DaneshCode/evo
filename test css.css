@@ -1,15 +1,20 @@
 * {
   padding: 10px;
-  margin: 0px;
+  margin: 0;
   box-sizing: border-box;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: Arial, sans-serif;
   font-size: 30px;
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   background-color: rgb(238, 200, 103);
   width: 100%;
@@ -17,6 +22,9 @@ body {
 }
 
 .article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   width: 75%;
   background-color: skyblue;
@@ -25,11 +33,17 @@ body {
 }
 
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   display: flow-root;
 }
 
 .sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 25%;
   height: 200px;
   background-color: rgb(153, 189, 100);
@@ -37,6 +51,9 @@ body {
 }
 
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   background-color: rgb(238, 200, 103);
   width: 100%;
@@ -70,7 +87,6 @@ th {
 .overflow {
   border-radius: 20px;
   margin: auto;
-  direction: rtl;
   width: 500px;
   height: 200px;
   background-color: #04aa6d;
@@ -79,6 +95,21 @@ th {
   /* overflow-x: scroll; */
   overflow-y: scroll;
   margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.overflow::-webkit-scrollbar {
+  width: 14px; /* عرض نوار اسکرول */
+}
+
+.overflow::-webkit-scrollbar-thumb {
+  background-color: #888; /* رنگ نوار اسکرول */
+  border-radius: 10px; /* گرد کردن گوشه‌های نوار اسکرول */
+}
+
+.overflow::-webkit-scrollbar-track {
+  background: #f1f1f1; /* رنگ زمینه نوار اسکرول */
+  border-radius: 100px; /* گرد کردن گوشه‌های زمینه نوار اسکرول */
 }
 
 .login-form {

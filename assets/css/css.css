@@ -27,6 +27,32 @@ body {
   padding: 5px;
 }
 
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column; /* تغییر جهت چیدمان برای عرض‌های کوچکتر */
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 300px) {
+  footer {
+    flex-direction: column; /* تغییر جهت چیدمان برای عرض‌های کوچکتر */
+  }
+}
+
 .pBox {
   margin-left: auto;
   margin-right: auto;
