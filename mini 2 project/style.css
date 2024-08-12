@@ -23,10 +23,7 @@ div.bio {
   max-width: 600px;
   margin: 200px auto;
   padding: 30px 270px 50px 30px;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 30px;
+  border-radius: 30px 10px;
   box-shadow: 0 0 40px burlywood;
 }
 div.bio p {
@@ -40,10 +37,11 @@ div.call {
   left: 355px;
   bottom: 30px;
   background-color: burlywood;
-  border-top-left-radius: 10px;
+  /* border-top-left-radius: 10px;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px; */
+  border-radius: 10px 30px; /*خلاصه چهار خط کد بالا */
   line-height: 25px;
   box-shadow: 0px 0px 40px burlywood;
   overflow: hidden; /* اضافی عکس رو مثل بوردر ردیوس خودش میکنه */

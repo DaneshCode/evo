@@ -1,4 +1,9 @@
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   background-color: #e8e8e8;
   color: black;
   margin: auto;
@@ -28,10 +33,13 @@ body {
 }
 
 .nav {
+  width: 300px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  align-content: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 600px) {
@@ -54,14 +62,15 @@ footer {
 }
 
 .pBox {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
   font-size: 1.5rem;
   line-height: 1.6;
   color: black;
   border: 1px solid red;
-  width: 80%;
+  width: 50%;
   height: 50%;
   text-align: center;
   border-radius: 30px;
@@ -149,4 +158,11 @@ a.button:hover {
   to {
     background-position: 20vw;
   }
+}
+
+.chengePage {
+  width: 500px;
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: space-between;
 }
