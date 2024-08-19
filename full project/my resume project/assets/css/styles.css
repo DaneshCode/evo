@@ -120,7 +120,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 main {
   overflow: hidden;
@@ -943,7 +943,7 @@ textarea {
 /*========== SCROLL UP ==========*/
 .scrollup {
   position: fixed;
-  right: 1rem;
+  right: 3rem;
   bottom: -20%;
   background-color: var(--first-color);
   opacity: 0.8;
@@ -969,7 +969,6 @@ textarea {
 
 /*========== SCROLL BAR ==========*/
 ::-webkit-scrollbar {
-  width: 0.6rem;
   background-color: var(--scroll-bar-color);
   border-radius: 0.5rem;
 }
