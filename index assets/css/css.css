@@ -33,7 +33,7 @@ body {
 }
 
 .nav {
-  width: 400px;
+  width: 600px;
   display: flex;
   flex-direction: row;
   align-items: center;
