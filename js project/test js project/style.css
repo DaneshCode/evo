@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  height: 100vh;
+  width: 100%;
+}
+
+button {
+  background-color: #444141;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 10px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  text-decoration: none;
+}
+
+button:hover {
+  background-image: linear-gradient(
+    90deg,
+    #6a3093 0%,
+    #a044ff 50%,
+    #1f4037 75%,
+    #6a3093 100%
+  );
+  animation: slidernbw 5s linear infinite;
+  color: #fff;
+}
+
+@keyframes slidernbw {
+  to {
+    background-position: 20vw;
+  }
+}
+
+a.button {
+  background-color: #444141;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 10px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  text-decoration: none;
+}
+
+a.button:hover {
+  background-image: linear-gradient(
+    90deg,
+    #6a3093 0%,
+    #a044ff 50%,
+    #1f4037 75%,
+    #6a3093 100%
+  );
+  animation: slidernbw 5s linear infinite;
+  color: #fff;
+}
+
+@keyframes slidernbw {
+  to {
+    background-position: 20vw;
+  }
+}
+
+.test-1 {
+  display: flex;
+  position: relative;
+  background-color: lightsalmon;
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+  width: 20rem;
+  padding: 5rem;
+  border-radius: 0.7rem;
+  font-size: 2rem;
+}
