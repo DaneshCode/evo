@@ -42,12 +42,40 @@ body {
   flex-wrap: wrap;
 }
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  margin: 0.5rem 0;
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+.dropdown1:hover .dropdown-content,
+.dropdown2:hover .dropdown-content,
+.dropdown3:hover .dropdown-content {
+  display: block;
+}
+
 @media (max-width: 600px) {
   .nav {
     flex-direction: column; /* تغییر جهت چیدمان برای عرض‌های کوچکتر */
   }
-}
+  .dropdown2 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .dropdown1:hover ~ .dropdown2,
+  .dropdown1:hover ~ .dropdown3 {
+    display: none;
+  }
 
+  .dropdown2:hover ~ .dropdown3 {
+    display: none;
+  }
+}
 footer {
   display: flex;
   flex-direction: row;
@@ -75,21 +103,6 @@ footer {
   text-align: center;
   border-radius: 30px;
   padding: 15px;
-}
-
-output {
-  font-size: 30px;
-  color: #000000;
-}
-
-input {
-  color: #8707ff;
-  border: 2px solid #8707ff;
-  border-radius: 10px;
-  padding: 10px 25px;
-  background: transparent;
-  max-width: 190px;
-  font-size: large;
 }
 
 h1:before,
