@@ -100,7 +100,7 @@ footer {
   border: 1px solid red;
   width: 50%;
   height: 50%;
-  text-align: center;
+  text-align: justify;
   border-radius: 30px;
   padding: 15px;
 }
@@ -174,7 +174,7 @@ a.button:hover {
 }
 
 .chengePage {
-  width: 500px;
+  width: 400px;
   display: flex;
   flex-flow: row-reverse;
   justify-content: space-between;

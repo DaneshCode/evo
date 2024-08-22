@@ -6,6 +6,8 @@
 
 body {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 3rem;
@@ -84,4 +86,18 @@ a.button:hover {
   padding: 5rem;
   border-radius: 0.7rem;
   font-size: 2rem;
+}
+
+.lamp img {
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lamp .button {
+  margin-top: 150px; /* فاصله دکمه‌ها از تصاویر */
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
 }

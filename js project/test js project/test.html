@@ -10,6 +10,10 @@
       href="../../html-css mini project/maghaleh project/images/favicon.png"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
   </head>
   <body>
     <div id="test-1" class="test-1">
@@ -21,10 +25,19 @@
       ><button style="position: absolute; top: 0" onclick="change_color()">
         change color</button
       ><button style="position: absolute; left: 0" onclick="zoom_out()">
-        -</button
+        <i class="uil uil-search-minus"></i></button
       ><button style="position: absolute; right: 0" ; onclick="zoom_in()">
-        +
+        <i class="uil uil-search-plus"></i>
       </button>
+    </div>
+    <br /><br /><br /><br />
+
+    <div class="lamp">
+      <img id="turn_off" src="./images/pic_bulboff.gif" alt="turn off" />
+      <div class="button">
+        <button onclick="turn_on()">turn on</button>
+        <button onclick="turn_off()">turn off</button>
+      </div>
     </div>
   </body>
   <script src="./js test .js"></script>
