@@ -11,5 +11,5 @@
   "git.autofetch": true,
   "editor.linkedEditing": true,
   "cSpell.language": "en,en-GB,en-US,lorem,fa,fa-IR",
-  "livePreview.defaultPreviewPath": "/index.html"
+  "workbench.colorTheme": "One Dark Pro Darker"
 }

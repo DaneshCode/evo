@@ -170,3 +170,39 @@ form input[type="submit"]:hover {
   text-decoration: none;
   color: #039d55;
 }
+
+.animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.transforms-item {
+  transition: all 2s;
+}
+
+.transforms-item:hover {
+  transform: /*translate()*/ rotate(360turn) scale(1.5) /*skew(20deg)*/;
+}
+
+.loader {
+  width: 1rem;
+  height: 1rem;
+  animation-name: loader;
+  border: 0.5rem solid #35353535;
+  border-radius: 50%;
+  border-top: 0.5rem solid;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  /* animation-timing-function: linear; */
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(365deg);
+  }
+}
