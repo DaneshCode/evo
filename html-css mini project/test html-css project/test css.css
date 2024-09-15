@@ -176,6 +176,21 @@ form input[type="submit"]:hover {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background: linear-gradient(to right, #3c556d, #3498db);
+  background-size: 400% 400%;
+  animation: changColor 4s infinite;
+}
+
+@keyframes changColor {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .transforms-item {
@@ -186,23 +201,164 @@ form input[type="submit"]:hover {
   transform: /*translate()*/ rotate(360turn) scale(1.5) /*skew(20deg)*/;
 }
 
-.loader {
+.loader1 {
   width: 1rem;
   height: 1rem;
-  animation-name: loader;
+  margin: 1rem;
+  animation-name: loader1;
   border: 0.5rem solid #35353535;
   border-radius: 50%;
   border-top: 0.5rem solid;
   animation-iteration-count: infinite;
   animation-duration: 3s;
-  /* animation-timing-function: linear; */
 }
 
-@keyframes loader {
+@keyframes loader1 {
   0% {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(365deg);
+    transform: rotate(360deg);
+  }
+}
+
+.loader2 {
+  width: 1rem;
+  height: 1rem;
+  margin: 1rem;
+  animation-name: loader2;
+  border: 0.5rem solid #35353535;
+  border-radius: 50%;
+  border-top: 0.5rem solid black;
+  border-right: 0.5rem solid black;
+  border-bottom: 0.5rem solid black;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes loader2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader3 {
+  width: 1rem;
+  height: 1rem;
+  margin: 1rem;
+  animation-name: loader3;
+  border: 0.5rem solid #35353535;
+  border-radius: 50%;
+  border-top: 0.5rem solid black;
+  border-bottom: 0.5rem solid black;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes loader3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader4 {
+  width: 1rem;
+  height: 1rem;
+  margin: 1rem;
+  animation-name: loader4;
+  border: 0.5rem solid #35353535;
+  border-radius: 50%;
+  border-top: 0.5rem solid black;
+  border-right: 0.5rem solid black;
+  border-bottom: 0.5rem solid black;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4rem;
+}
+
+@keyframes loader4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.child1 {
+  width: 1rem;
+  height: 1rem;
+  animation-name: child;
+  border: 0.3rem solid #35353535;
+  border-radius: 50%;
+  border-top: 0.3rem solid black;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+@keyframes child {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader5 {
+  width: 1rem;
+  height: 1rem;
+  margin: 1rem;
+  animation-name: loader5;
+  border: 0.5rem solid #35353535;
+  border-radius: 50%;
+  border-top: 0.5rem solid black;
+  border-right: 0.5rem solid black;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4rem;
+}
+
+@keyframes loader5 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.child2 {
+  width: 1rem;
+  height: 1rem;
+  animation-name: child2;
+  border: 0.3rem solid #35353535;
+  border-radius: 50%;
+  border-top: 0.3rem solid black;
+  border-right: 0.3rem solid black;
+  animation: childe2 1s reverse linear infinite;
+}
+@keyframes child2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
