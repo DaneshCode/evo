@@ -77,6 +77,10 @@ body {
   .dropdown2:hover ~ .dropdown3 {
     display: none;
   }
+
+  footer {
+    margin-top: 2rem;
+  }
 }
 footer {
   display: flex;
