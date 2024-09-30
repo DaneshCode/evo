@@ -11,4 +11,5 @@ output {
     background: transparent;
     max-width: 190px;
     font-size: large;
+    margin: 1rem;
   }

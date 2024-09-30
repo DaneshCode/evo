@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Yekan";
+  src: url(./Font/Yekan.ttf);
+}
+
+body {
+  font-family: "Yekan";
+}
+
+.header {
+  display: flex;
+  height: 8rem;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header a {
+  padding-left: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.header a:hover {
+  color: orange;
+}
+
+.image-under-header img {
+  max-width: 100%;
+  height: 25.5rem;
+  object-fit: cover;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.js,
+.res,
+.react {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid lightgray;
+  width: 100%;
+  height: 36vh; /* ارتفاع نسبت به 30 درصد از ارتفاع صفحه */
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+
+@media screen and (min-width: 400px) {
+  .js,
+  .res,
+  .react {
+    width: 45%;
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    flex-direction: row;
+  }
+
+  .js,
+  .res,
+  .react {
+    width: 30%;
+    margin: 0.5rem;
+  }
+}

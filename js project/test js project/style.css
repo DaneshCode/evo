@@ -101,3 +101,7 @@ a.button:hover {
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 360px) {
+  .test-1{width: 100%;}
+}
