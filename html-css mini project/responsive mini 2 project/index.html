@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="en">
+<html dir="rtl" lang="fa">
   <head>
     <meta charset="utf-8" />
     <title>next1code site</title>
@@ -17,48 +17,45 @@
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <img src="./assets/Images/n1ogo.png" alt="logo" style="height: 70px" />
-        <a href="#">صفحه نخست</a>
-        <a href="#">دورها</a>
-        <a href="#">درباره ما</a>
-      </div>
-      <div class="image-under-header">
-        <img src="./assets/Images/Screenshot 2024-09-30 185533.png" alt="" />
-      </div>
-      <br /><br />
-      <h1 style="display: flex; justify-content: center">دوره های پیش فروش</h1>
+      <header class="header">
+        <img src="./assets/Images/n1ogo.png" alt="logo" class="logo" />
+        <nav>
+          <a href="#">صفحه نخست</a>
+          <a href="#">دوره ها</a>
+          <a href="#">درباره ما</a>
+        </nav>
+      </header>
 
-      <br /><br />
-      <div class="main">
-        <div class="js">
+      <div class="image-under-header"></div>
+
+      <h1 class="main-title">دوره های پیش فروش</h1>
+
+      <main class="main">
+        <article class="card js">
           <img
+            src="./assets/Images/Screenshot%202024-09-30%20185617.png"
+            alt="JavaScript Course"
             class="responsive"
-            src="./assets/Images/Screenshot 2024-09-30 185617.png"
-            alt=""
-            style="border-radius: 1rem 1rem 0 0"
-          /><br />
+          />
           <p>دوره پروژه محور جاوا اسکریپت</p>
-        </div>
-        <div class="res">
+        </article>
+        <article class="card res">
           <img
+            src="./assets/Images/Screenshot%202024-09-30%20185606.png"
+            alt="Responsive Course"
             class="responsive"
-            src="./assets/Images/Screenshot 2024-09-30 185606.png"
-            alt=""
-            style="border-radius: 1rem 1rem 0 0"
-          /><br />
+          />
           <p>دوره پروژه محور ریسپانسیو</p>
-        </div>
-        <div class="react">
+        </article>
+        <article class="card react">
           <img
+            src="./assets/Images/Screenshot%202024-09-30%20185650.png"
+            alt="React Course"
             class="responsive"
-            src="./assets/Images/Screenshot 2024-09-30 185650.png"
-            alt=""
-            style="border-radius: 1rem 1rem 0 0"
-          /><br />
+          />
           <p>دوره پروژه محور ری‌اکت</p>
-        </div>
-      </div><br><br><br><br>
+        </article>
+      </main>
     </div>
   </body>
 </html>
