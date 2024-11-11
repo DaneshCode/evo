@@ -27,72 +27,86 @@
         white
       </button>
     </header>
+    <div class="calculator">
+      <h1>ماشین حساب</h1>
 
-    <h1>ماشین حساب</h1>
+      <input id="n1" type="number" placeholder=" : عدد بده" />
+      <output id="sign">?</output>
+      <input id="n2" type="number" placeholder=" : عدد بعدی بده" />
+      <output>=</output>
+      <output id="javab">javab</output>
 
-    <input id="n1" type="number" placeholder=" : عدد بده" />
-    <output id="sign">?</output>
-    <input id="n2" type="number" placeholder=" : عدد بعدی بده" />
-    <output>=</output>
-    <output id="javab">javab</output>
+      <br />
+      <br />
 
+      <button
+        type="button"
+        style="padding-bottom: 0px; padding-top: 0px"
+        title="جمع"
+        onclick="calculator('+')"
+      >
+        +
+      </button>
+      <button
+        type="button"
+        style="padding-bottom: 0px; padding-top: 0px"
+        title="تفریق"
+        onclick="calculator('-')"
+      >
+        -
+      </button>
+      <button
+        type="button"
+        style="padding-bottom: 0px; padding-top: 0px"
+        title="ضرب"
+        onclick="calculator('*')"
+      >
+        *
+      </button>
+      <button
+        type="button"
+        style="padding-bottom: 0px; padding-top: 0px"
+        title="تقسیم"
+        onclick="calculator('/')"
+      >
+        /
+      </button>
+    </div>
     <br />
     <br />
+    <br />
+    <br />
+    <div class="mazrab">
+      <input id="n3" type="number" placeholder=" : عدد بده" />
+      <input id="n4" type="number" placeholder=" : مضرب از" />
+      <input id="n5" type="number" placeholder=" : مضرب تا" />
+      <br />
+      <br />
+      <button
+        type="button"
+        style="padding-bottom: 0px; padding-top: 0px"
+        title="اجرا"
+        onclick="mazrab()"
+      >
+        اجرا
+      </button>
 
-    <button
-      type="button"
-      style="padding-bottom: 0px; padding-top: 0px"
-      title="جمع"
-      onclick="calculator('+')"
-    >
-      +
-    </button>
-    <button
-      type="button"
-      style="padding-bottom: 0px; padding-top: 0px"
-      title="تفریق"
-      onclick="calculator('-')"
-    >
-      -
-    </button>
-    <button
-      type="button"
-      style="padding-bottom: 0px; padding-top: 0px"
-      title="ضرب"
-      onclick="calculator('*')"
-    >
-      *
-    </button>
-    <button
-      type="button"
-      style="padding-bottom: 0px; padding-top: 0px"
-      title="تقسیم"
-      onclick="calculator('/')"
-    >
-      /
-    </button>
-
-    <br />
-    <br />
-    <br />
-    <br />
-
-    <input id="n3" type="number" placeholder=" : عدد بده" />
-    <input id="n4" type="number" placeholder=" : مضرب از" />
-    <input id="n5" type="number" placeholder=" : مضرب تا" />
-    <br />
-    <br />
-    <button
-      type="button"
-      style="padding-bottom: 0px; padding-top: 0px"
-      title="اجرا"
-      onclick="mazrab()"
-    >
-      اجرا
-    </button>
-
-    <p id="res"></p>
-    <p id="result"></p>
+      <p id="res"></p>
+      <p id="result"></p>
+    </div>
+    <div class="adad-aval">
+      <input id="aval" type="number" value="2" placeholder="این عدد اول هست یا مرکب؟" />
+      <button
+        type="button"
+        style="padding-bottom: 0px; padding-top: 0px"
+        title="اجرا"
+        onclick="aval()"
+      >
+        اجرا
+      </button>
+    </div>
+    <div class="aval-or-morkab" id="aval-or-morkab"></div>
+    
 
     <footer>
       <a

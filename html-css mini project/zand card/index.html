@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>طراحی برچسب چسب‌دار روی صفحه A4</title>
     <style>
-      /* تنظیمات کلی صفحه */
       @font-face {
         font-family: Lalezar;
         src: url(./Lalezar-Regular.ttf);
@@ -16,76 +15,165 @@
         height: 100vh;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start; /* کارت‌ها از بالا شروع به نمایش می‌شوند */
         margin: 0;
         padding: 0;
         font-family: Lalezar;
-        background-color: #f8f8f8;
+        background-color: #ffffff;
       }
 
-      /* استایل کارت‌ها */
+      .a4-container {
+        width: 210mm;
+        height: 297mm;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.2mm; /* فاصله بین کارت‌ها */
+        box-sizing: border-box;
+        background-color: #000000;
+      }
+
       .card {
-        width: 70mm; /* عرض کارت */
-        height: 70mm; /* ارتفاع کارت */
+        width: 69.5mm; /* عرض کارت */
+        height: 73.4mm; /* ارتفاع کارت */
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #ffffff; /* رنگ پس‌زمینه جلو کارت */
-        border-radius: 30px; /* گوشه‌های گرد */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+
         text-align: center;
         padding: 30px 30px 30px 37px;
         box-sizing: border-box;
-        text-align: center;
       }
 
-      /* استایل لوگوها */
       .logo-container {
         display: flex;
-        justify-content: space-between; /* فاصله بین لوگوها */
-        width: 100%; /* استفاده از عرض کامل کارت */
+        justify-content: space-between;
+        width: 100%;
       }
 
       .card img {
-        width: 50px; /* اندازه لوگو */
+        width: 50px;
         height: 50px;
       }
 
-      /* استایل کیو آر کد */
       .card .qrcode {
-        width: 23mm; /* اندازه کیو آر کد */
-        height: 23mm;
+        width: 30mm;
+        height: 30mm;
       }
 
-      /* استایل متن با گرادیانت */
       .gradient-text {
-        background: linear-gradient(
-          90deg,
-          #007bff,
-          #8a2be2
-        ); /* گرادیانت آبی به بنفش */
-        -webkit-background-clip: text; /* برش پس‌زمینه برای متن */
-        -webkit-text-fill-color: transparent; /* رنگ متن را شفاف می‌کند */
-        font-size: 1.3rem; /* اندازه فونت بزرگتر برای متن گرادیانت */
-        font-weight: 500; /* زخیم کردن متن */
+        background: linear-gradient(90deg, #007bff, #8a2be2);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.3rem;
+        font-weight: 500;
         text-align: center;
-        margin: 1rem;
+        margin: 0.5rem;
       }
     </style>
   </head>
   <body>
     <div class="a4-container">
-      <!-- نمونه کارت‌ها -->
+      <!-- کارت‌ها -->
       <div class="card">
         <div class="logo-container">
           <img src="./photo.jpg" alt="لوگو ۱" />
           <img src="./logo-zand.png" alt="لوگو ۲" />
         </div>
         <p class="gradient-text">انجمن علمی <br />مهندسی کامپیوتر</p>
-        <!-- افزودن کلاس گرادیانت -->
         <img src="./temp_image.png" alt="کیو آر کد" class="qrcode" />
       </div>
+      <div class="card">
+        <div class="logo-container">
+          <img src="./photo.jpg" alt="لوگو ۱" />
+          <img src="./logo-zand.png" alt="لوگو ۲" />
+        </div>
+        <p class="gradient-text">انجمن علمی <br />مهندسی کامپیوتر</p>
+        <img src="./temp_image.png" alt="کیو آر کد" class="qrcode" />
+      </div>
+      <div class="card">
+        <div class="logo-container">
+          <img src="./photo.jpg" alt="لوگو ۱" />
+          <img src="./logo-zand.png" alt="لوگو ۲" />
+        </div>
+        <p class="gradient-text">انجمن علمی <br />مهندسی کامپیوتر</p>
+        <img src="./temp_image.png" alt="کیو آر کد" class="qrcode" />
+      </div>
+      <div class="card">
+        <div class="logo-container">
+          <img src="./photo.jpg" alt="لوگو ۱" />
+          <img src="./logo-zand.png" alt="لوگو ۲" />
+        </div>
+        <p class="gradient-text">انجمن علمی <br />مهندسی کامپیوتر</p>
+        <img src="./temp_image.png" alt="کیو آر کد" class="qrcode" />
+      </div>
+      <div class="card">
+        <div class="logo-container">
+          <img src="./photo.jpg" alt="لوگو ۱" />
+          <img src="./logo-zand.png" alt="لوگو ۲" />
+        </div>
+        <p class="gradient-text">انجمن علمی <br />مهندسی کامپیوتر</p>
+        <img src="./temp_image.png" alt="کیو آر کد" class="qrcode" />
+      </div>
+      <div class="card">
+        <div class="logo-container">
+          <img src="./photo.jpg" alt="لوگو ۱" />
+          <img src="./logo-zand.png" alt="لوگو ۲" />
+        </div>
+        <p class="gradient-text">انجمن علمی <br />مهندسی کامپیوتر</p>
+        <img src="./temp_image.png" alt="کیو آر کد" class="qrcode" />
+      </div>
+      <div class="card">
+        <div class="logo-container">
+          <img src="./photo.jpg" alt="لوگو ۱" />
+          <img src="./logo-zand.png" alt="لوگو ۲" />
+        </div>
+        <p class="gradient-text">انجمن علمی <br />مهندسی کامپیوتر</p>
+        <img src="./temp_image.png" alt="کیو آر کد" class="qrcode" />
+      </div>
+      <div class="card">
+        <div class="logo-container">
+          <img src="./photo.jpg" alt="لوگو ۱" />
+          <img src="./logo-zand.png" alt="لوگو ۲" />
+        </div>
+        <p class="gradient-text">انجمن علمی <br />مهندسی کامپیوتر</p>
+        <img src="./temp_image.png" alt="کیو آر کد" class="qrcode" />
+      </div>
+      <div class="card">
+        <div class="logo-container">
+          <img src="./photo.jpg" alt="لوگو ۱" />
+          <img src="./logo-zand.png" alt="لوگو ۲" />
+        </div>
+        <p class="gradient-text">انجمن علمی <br />مهندسی کامپیوتر</p>
+        <img src="./temp_image.png" alt="کیو آر کد" class="qrcode" />
+      </div>
+      <div class="card">
+        <div class="logo-container">
+          <img src="./photo.jpg" alt="لوگو ۱" />
+          <img src="./logo-zand.png" alt="لوگو ۲" />
+        </div>
+        <p class="gradient-text">انجمن علمی <br />مهندسی کامپیوتر</p>
+        <img src="./temp_image.png" alt="کیو آر کد" class="qrcode" />
+      </div>
+      <div class="card">
+        <div class="logo-container">
+          <img src="./photo.jpg" alt="لوگو ۱" />
+          <img src="./logo-zand.png" alt="لوگو ۲" />
+        </div>
+        <p class="gradient-text">انجمن علمی <br />مهندسی کامپیوتر</p>
+        <img src="./temp_image.png" alt="کیو آر کد" class="qrcode" />
+      </div>
+      <div class="card">
+        <div class="logo-container">
+          <img src="./photo.jpg" alt="لوگو ۱" />
+          <img src="./logo-zand.png" alt="لوگو ۲" />
+        </div>
+        <p class="gradient-text">انجمن علمی <br />مهندسی کامپیوتر</p>
+        <img src="./temp_image.png" alt="کیو آر کد" class="qrcode" />
+      </div>
+      <!-- تعداد بیشتری از کارت‌ها را می‌توانید اضافه کنید -->
     </div>
   </body>
 </html>
