@@ -8,10 +8,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   margin-top: 3rem;
-  height: 100vh;
+  margin-bottom: 3rem;
   width: 100%;
 }
 
@@ -103,5 +101,14 @@ a.button:hover {
 }
 
 @media screen and (max-width: 360px) {
-  .test-1{width: 100%;}
+  .test-1 {
+    width: 100%;
+  }
+}
+
+#output,
+#output2,
+#output3,
+#output4 {
+  margin-top: 5rem;
 }

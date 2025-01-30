@@ -1,3 +1,7 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 output {
   font-size: 30px;
   color: #000000;
@@ -19,6 +23,19 @@ input {
 }
 
 .aval-or-morkab {
+  font-size: 1.5rem;
+  margin: 3rem;
+}
+
+#far_to_celsius {
+  direction: ltr;
+}
+
+.far_to_cel {
+  margin-top: 3rem;
+}
+
+.far_to_celsius {
   font-size: 1.5rem;
   margin: 3rem;
 }

@@ -82,31 +82,26 @@
       <input id="n5" type="number" placeholder=" : مضرب تا" />
       <br />
       <br />
-      <button
-        type="button"
-        style="padding-bottom: 0px; padding-top: 0px"
-        title="اجرا"
-        onclick="mazrab()"
-      >
-        اجرا
-      </button>
+      <button type="button" title="اجرا" onclick="mazrab()">اجرا</button>
 
       <p id="res"></p>
       <p id="result"></p>
     </div>
     <div class="adad-aval">
-      <input id="aval" type="number" value="2" placeholder="این عدد اول هست یا مرکب؟" />
-      <button
-        type="button"
-        style="padding-bottom: 0px; padding-top: 0px"
-        title="اجرا"
-        onclick="aval()"
-      >
-        اجرا
-      </button>
+      <input id="aval" type="number" placeholder="این عدد اول هست یا مرکب؟" />
+      <button type="button" title="اجرا" onclick="aval()">اجرا</button>
     </div>
     <div class="aval-or-morkab" id="aval-or-morkab"></div>
-    
+
+    <div class="far_to_cel">
+      <input
+        id="to_celsius"
+        type="number"
+        placeholder="تبدیل فارنهایت به سانتی گراد"
+      />
+      <button type="button" title="اجرا" onclick="far_to_cel()">اجرا</button>
+      <div id="far_to_celsius"></div>
+    </div>
 
     <footer>
       <a

@@ -11,6 +11,51 @@
   "git.autofetch": true,
   "editor.linkedEditing": true,
   "cSpell.language": "en,en-GB,en-US,lorem,fa,fa-IR",
-  "workbench.colorTheme": "Default Dark Modern",
-  "livePreview.defaultPreviewPath": "/html-css mini project/test html-css project/test.html"
+  "explorer.confirmDragAndDrop": false,
+  "vscode-edge-devtools.webhintInstallNotification": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorStyle": "line",
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "eslint.enable": true,
+  "eslint.run": "onSave",
+  "debug.openDebug": "openOnSessionStart",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.parameterHints.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.guides.bracketPairs": true,
+  "editor.guides.indentation": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
+  "breadcrumbs.enabled": true,
+  "explorer.confirmDelete": false,
+  "files.autoSaveDelay": 1000,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.arrowParens": "always",
+  "prettier.printWidth": 80
 }

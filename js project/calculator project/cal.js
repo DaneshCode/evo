@@ -117,3 +117,29 @@ function aval() {
     document.getElementById("aval-or-morkab").innerHTML = "مرکب است";
   }
 }
+
+function far_to_cel() {
+  // دریافت مقدار ورودی
+  let f = parseFloat(document.getElementById("to_celsius").value);
+
+  // بررسی اینکه آیا ورودی معتبر است
+  if (isNaN(f)) {
+    document.getElementById("far_to_celsius").innerHTML =
+      "لطفاً یک عدد وارد کنید.";
+    return;
+  }
+
+  // تبدیل فارنهایت به سانتی‌گراد
+  let c = (5 / 9) * (f - 32);
+
+  // نمایش نتیجه به همراه دو رقم اعشار
+  document.getElementById("far_to_celsius").innerHTML = `${c.toFixed(2)} °C`;
+
+  if (c <= 0) {
+    document.getElementById("far_to_celsius").style.color = "#4682B4";
+  } else if (c > 30) {
+    document.getElementById("far_to_celsius").style.color = "#FF4500";
+  } else {
+    document.getElementById("far_to_celsius").style.color = "black";
+  }
+}
