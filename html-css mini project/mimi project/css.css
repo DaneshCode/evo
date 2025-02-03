@@ -1,27 +1,39 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: "B-nazanin";
-  margin: 0px;
-  padding: 0px;
+  font-family: 'B-nazanin', sans-serif;
   text-align: center;
+  background-color: #353535;
+  color: #e0e0e0;
 }
 
 @font-face {
-  font-family: "B-nazanin";
+  font-family: 'B-nazanin';
   src: url(../../index\ assets/css/Fonts/B-NAZANIN.TTF);
 }
 
 @font-face {
-  font-family: "Lalezar";
+  font-family: 'Lalezar';
   src: url(../../index\ assets/css/Fonts/Lalezar-Regular.ttf);
 }
 
-div.header {
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.header,
+.about,
+.footer {
+  width: 100%;
   text-align: center;
+}
+
+.header {
   background-image: url(../maghaleh\ project/images/2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,122 +43,116 @@ div.header {
   background-blend-mode: overlay;
 }
 
-ul#header {
-  position: fixed;
-  list-style-type: none;
-  left: 50%;
-  top: 5px;
-  transform: translateX(-50%); /* جابجایی برای مرکز کردن */
-  background-color: rgba(0, 0, 0, 0.4);
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
   padding: 0;
   margin: 0;
-  z-index: 1000; /* برای قرارگیری بالای سایر محتویات */
+  z-index: 1000;
+  display: flex;
+  gap: 15px;
 }
 
-ul#header li {
-  display: inline-block;
+#header li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0 15px;
+  margin: 0;
+  z-index: 1000;
+  display: flex;
+  gap: 15px;
 }
 
-ul#header li a {
+#header li a {
   text-decoration: none;
-  color: white;
+  color: #e0e0e0;
   padding: 15px;
 }
 
-ul#header li a:hover {
-  color: orange;
+#header li a:hover {
+  color: #ff9800;
 }
 
-div.header h1 {
+.header h1 {
   font-size: 60px;
-  font-family: "Lalezar";
-  color: white;
-  margin: auto;
-  text-align: center;
+  font-family: 'Lalezar', sans-serif;
+  color: #e0e0e0;
   padding-top: 160px;
   padding-bottom: 30px;
 }
 
-div.header h1 span {
-  color: orange;
+.header h1 span {
+  color: #ff9800;
 }
 
-div.header p {
+.header p {
   display: inline-block;
-  margin: auto;
   background-color: rgba(0, 0, 0, 0.4);
-  height: 55px; /* for horizontal center */
-  line-height: 55px; /* for horizontal center */
-  color: white;
+  height: 55px;
+  line-height: 55px;
+  color: #e0e0e0;
   border: 2px solid gray;
   border-radius: 100px;
-  padding: 0px 30px 0px 30px; /* for padding right and left */
+  padding: 0 30px;
 }
 
-.box {
+.members h1 {
+  padding: 50px 0;
+}
+
+.members .box {
   display: inline-block;
   max-width: 400px;
   border: 2px solid gray;
   text-align: center;
-  margin: 50px 15px 50px 15px;
-  box-shadow: 0px 0px 15px;
+  margin: 50px 15px;
+  box-shadow: 0 0 15px;
+  background-color: #4a4a4a;
 }
 
-.box img {
+.members .box img {
   height: 200px;
   width: 100%;
   display: inline-block;
-  max-width: 400px;
 }
 
-.box p {
-  display: inline-block;
+.members .box p {
   text-align: justify;
   padding: 15px;
 }
 
-div.about {
-  text-align: center;
-  background-image: url(../assets/images/2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 750px;
-  background-color: rgba(0, 0, 0, 0.6);
-  background-blend-mode: overlay;
+.about {
+  padding: 100px 0;
+  color: #e0e0e0;
 }
 
-div.circle {
-  max-width: 880px;
-  margin: 100px;
-  display: inline-block;
-  padding: 0px 100px 100px 100px;
-  border: 2px solid gray;
-  border-radius: 100%;
-  text-align: center;
-  background-color: rgba(135, 135, 135, 0.5);
-  background-blend-mode: overlay;
+.circle h1 {
+  color: #e0e0e0;
+  padding: 50px 0;
 }
 
-div.circle h1 {
-  color: white;
-
-  padding: 50px 0px 50px 0px;
-}
-
-div.circle p {
+.circle p {
   text-align: justify;
-  color: white;
-  text-align: center;
-  display: inline-block;
+  color: #e0e0e0;
   margin: auto;
   max-width: 350px;
 }
 
-div.footer {
-  font-family: "arial";
+.footer {
+  font-family: 'Arial', sans-serif;
   height: 170px;
-  background-color: rgb(135, 135, 135);
+  padding: 20px 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
 }
 
 a.button {
@@ -154,23 +160,10 @@ a.button {
   border-radius: 10px;
   color: #fff;
   cursor: pointer;
-  padding: 10px 10px;
-  margin: 5px;
+  padding: 10px;
   font-size: 16px;
   border: none;
   text-decoration: none;
-}
-
-a.button:hover {
-  background-image: linear-gradient(
-    90deg,
-    #6a3093 0%,
-    #a044ff 50%,
-    #1f4037 75%,
-    #6a3093 100%
-  );
-  animation: slidernbw 5s linear infinite;
-  color: #fff;
 }
 
 @keyframes slidernbw {
@@ -179,10 +172,119 @@ a.button:hover {
   }
 }
 
-div.arrow-up {
+.arrow-up {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  padding: 10px;
-  border-radius: 50%;
+  padding: 20px;
+}
+
+.button:hover {
+  background-color: #ff9800;
+}
+
+p:hover,
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover {
+  color: #ff9800;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 40px;
+    padding-top: 100px;
+  }
+
+  .header p {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .members .box {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .members .box img {
+    height: auto;
+  }
+
+  .circle {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 50%;
+  }
+
+  .circle p {
+    max-width: 100%;
+  }
+
+  .footer {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  a.button {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .arrow-up {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #header li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .header h1 {
+    font-size: 30px;
+    padding-top: 80px;
+  }
+
+  .header p {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .members .box {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .circle {
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .footer {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  a.button {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+  .arrow-up {
+    bottom: 5px;
+    right: 5px;
+  }
 }

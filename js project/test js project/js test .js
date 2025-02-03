@@ -29,23 +29,53 @@ for (let i = 0; i <= 10; i++) {
   }
 }
 
-for (i = 0; i <= 10; i++) {
+for (let i = 0; i <= 10; i++) {
   if (i % 2 == 0) {
     continue;
   }
   document.getElementById('output2').innerHTML += i + '<br>';
 }
 
-for (a = 1; a <= 2; a++) {
+for (let a = 1; a <= 2; a++) {
   document.getElementById('output3').innerHTML += a + 'a<br>';
-  for (b = 1; b <= 3; b++) {
+  for (let b = 1; b <= 3; b++) {
     document.getElementById('output3').innerHTML += b + 'b<br>';
   }
 }
+
 let num = [1, 6, 7, 5, 54, 4, 4];
 num[2] = 40;
 document.getElementById('output5').innerHTML +=
   num[2] + '<br>' + num[3] + '<br>';
 
-document.getElementById('output6').innerHTML = 'Hello World';
-document.getElementById('output7').innerHTML = 'Goodbye World';
+// محاسبه میانگین اعداد یک آرایه با استفاده از reduce
+let grades = [17, 18.5, 20, 20, 19.75, 20, 18, 20];
+let sum = grades.reduce((a, b) => a + b, 0); // محاسبه مجموع
+let average = sum / grades.length; // محاسبه میانگین
+
+// نمایش همه اعداد در قالب یک آرایه
+document.getElementById('output6').innerHTML = `[${grades.join(
+  ', ',
+)}] <br><br><br><br><br>`;
+
+document.getElementById(
+  'output6',
+).innerHTML += `<strong><br><br><br>میانگین نهایی: ${average}</strong><br><br><br>`;
+
+// محاسبه میانگین اعداد یک آرایه با استفاده از حلقه for
+let grades_2 = [17, 18.5, 20, 20, 19.75, 20, 18, 20];
+let sum_2 = 0;
+
+for (let i = 0; i < grades_2.length; i++) {
+  sum_2 += grades_2[i];
+}
+
+let average_2 = sum_2 / grades_2.length;
+
+document.getElementById('output7').innerHTML = `[${grades_2.join(
+  ', ',
+)}] <br><br><br><br><br>`;
+
+document.getElementById(
+  'output7',
+).innerHTML += `<strong><br><br><br>میانگین نهایی: ${average_2}</strong><br><br><br>`;

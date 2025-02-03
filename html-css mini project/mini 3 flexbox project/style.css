@@ -11,11 +11,17 @@
 
 body {
   font-family: Yekan, Arial, Helvetica, sans-serif;
+  display: flex;
 }
 
 .container {
   margin: 0 auto;
   width: 1400px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .header {
@@ -53,6 +59,7 @@ body {
   margin: 20px;
   color: #288ed9;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .header .left a:hover {
@@ -61,13 +68,15 @@ body {
 
 .header .left .button {
   background-color: #288ed9;
-  padding: 5px 20px 5px 20px;
+  padding: 5px 20px;
   color: white;
   border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .header .left .button:hover {
   background-color: #026db9;
+  color: #fff;
 }
 
 .firstMain {
@@ -233,4 +242,126 @@ body {
   display: inline-block;
   font-size: 40px;
   padding: 10px;
+  color: #288ed9;
+  text-decoration: none;
+}
+
+.footer li:hover {
+  color: #026db9;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+    padding: 0 10px;
+  }
+
+  .firstMain {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .firstMain .right,
+  .firstMain .left {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .secondMain {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secondMain .item {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .hostAbri,
+  .anvaHost,
+  .hostAshteraki,
+  .hostWordpress {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hostAbri .right,
+  .hostAbri .left,
+  .anvaHost .right,
+  .anvaHost .left,
+  .hostAshteraki .right,
+  .hostAshteraki .left,
+  .hostWordpress .right,
+  .hostWordpress .left {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header .right,
+  .header .left {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .header .left {
+    flex-direction: row;
+  }
+
+  .header img {
+    margin: 10px 0;
+  }
+
+  .header a {
+    padding: 0.5rem 0;
+  }
+
+  .firstMain {
+    margin-top: 20rem;
+  }
+
+  .firstMain,
+  .secondMain,
+  .hostAbri,
+  .anvaHost,
+  .hostAshteraki,
+  .hostWordpress {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .firstMain .right,
+  .firstMain .left,
+  .secondMain .item,
+  .hostAbri .right,
+  .hostAbri .left,
+  .anvaHost .right,
+  .anvaHost .left,
+  .hostAshteraki .right,
+  .hostAshteraki .left,
+  .hostWordpress .right,
+  .hostWordpress .left {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer li {
+    font-size: 20px;
+    margin: 5px 0;
+  }
 }

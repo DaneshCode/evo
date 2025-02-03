@@ -57,5 +57,6 @@
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
   "prettier.arrowParens": "always",
-  "prettier.printWidth": 80
+  "prettier.printWidth": 80,
+  "livePreview.defaultPreviewPath": "/index.html"
 }

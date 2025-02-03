@@ -109,6 +109,15 @@ a.button:hover {
 #output,
 #output2,
 #output3,
-#output4 {
-  margin-top: 5rem;
+#output4,
+#output5,
+#output6,
+#output7 {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  flex-wrap: wrap;
+  text-align: justify;
 }
