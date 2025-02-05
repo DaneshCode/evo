@@ -79,3 +79,10 @@ document.getElementById('output7').innerHTML = `[${grades_2.join(
 document.getElementById(
   'output7',
 ).innerHTML += `<strong><br><br><br>میانگین نهایی: ${average_2}</strong><br><br><br>`;
+
+
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+console.log(array.slice(0, 5)); // [1, 2, 3, 4, 5]
+console.log(array.splice(2)); // [3, 4, 5, 6, 7, 8, 9, 10]
+

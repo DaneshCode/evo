@@ -112,7 +112,8 @@ a.button:hover {
 #output4,
 #output5,
 #output6,
-#output7 {
+#output7,
+#output8 {
   margin: 3rem;
   display: flex;
   justify-content: center;
