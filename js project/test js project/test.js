@@ -80,9 +80,29 @@ document.getElementById(
   'output7',
 ).innerHTML += `<strong><br><br><br>میانگین نهایی: ${average_2}</strong><br><br><br>`;
 
-
 let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 console.log(array.slice(0, 5)); // [1, 2, 3, 4, 5]
 console.log(array.splice(2)); // [3, 4, 5, 6, 7, 8, 9, 10]
+
+// محاسبه بزرگترین عدد یک آرایه
+let array_2 = [9.75, 20, 33, 43, 25, 66, 17, 18, 19, 10];
+let max = array_2[0];
+for (let i = 0; i < array_2.length; i++) {
+  if (array_2[i] > max) {
+    max = array_2[i];
+  }
+}
+console.log(max);
+
+// محاسبه کوچکترین عدد یک آرایه
+let array_3 = [9.75, 20, 33, 43, 25, 66, 17, 18, 19, 10];
+let min = array_3[0];
+for (let i = 0; i < array_3.length; i++) {
+  if (array_3[i] < min) {
+    min = array_3[i];
+  }
+}
+console.log(min);
+
 
