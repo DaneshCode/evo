@@ -105,4 +105,33 @@ for (let i = 0; i < array_3.length; i++) {
 }
 console.log(min);
 
+// Calculates the sumation of two numbers.
+
+function sumation(a, b) {
+  return a + b;
+}
+console.log(sumation(5, 48));
+
+// calculates the sumatuion of tow many numbers whith rest function
+
+function sumation(...numbers) {
+  return numbers.reduce((a, b) => a + b, 0);
+}
+console.log(sumation(5, 6, 7, 8, 9, 10));
+
+// Calculates the power of a number.
+function power(base, exponent) {
+  return base ** exponent;
+}
+console.log(power(2, 3));
+
+// calculates the power of a number with for loop
+function power(base, exponent) {
+  let result = 1;
+  for (let i = 0; i < exponent; i++) {
+    result *= base; //result = result * base
+  }
+  return result;
+}
+console.log(power(2, 10));
 
