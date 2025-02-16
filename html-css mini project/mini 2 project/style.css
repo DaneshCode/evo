@@ -1,33 +1,37 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-body {
-  font-family: "B-nazanin";
-  margin: 0px;
-  padding: 0px;
-  text-align: center;
-  background-color: rgb(255, 218, 172);
+/* Define CSS variables for theme consistency */
+:root {
+  --avatar-bg: #e6e0d6;
+  --light-bg: #f7f3f1;
+  --shadow: #c8b6a6;
+  --text: #3b2f23;
 }
 
-@font-face {
-  font-family: "B-nazanin";
-  src: url(../../index\ assets/css/Fonts/B-NAZANIN.TTF);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Vazirmatn', sans-serif;
+}
+
+body {
+  text-align: center;
+  background-color: var(--avatar-bg);
 }
 
 div.bio {
   position: relative;
   text-align: justify;
-  background-color: bisque;
+  background-color: var(--light-bg);
   max-width: 600px;
   margin: 200px auto;
   padding: 30px 270px 50px 30px;
   border-radius: 30px 10px;
-  box-shadow: 0 0 40px burlywood;
+  box-shadow: 0 0 40px var(--shadow);
 }
+
 div.bio p {
   max-width: 400px;
+  color: var(--text);
 }
 
 div.call {
@@ -36,29 +40,31 @@ div.call {
   right: 30px;
   left: 355px;
   bottom: 30px;
-  background-color: burlywood;
-  /* border-top-left-radius: 10px;
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 10px; */
-  border-radius: 10px 30px; /*خلاصه چهار خط کد بالا */
+  background-color: var(--avatar-bg);
+  border-radius: 10px 30px;
   line-height: 25px;
-  box-shadow: 0px 0px 40px burlywood;
-  overflow: hidden; /* اضافی عکس رو مثل بوردر ردیوس خودش میکنه */
+  box-shadow: 0 0 40px var(--shadow);
+  overflow: hidden;
 }
+
 div.call img {
   width: 100%;
   height: 210px;
-  /* border-top-right-radius: 30px; */ /*به جاش به بالای اور فلو دادم ! */
-  /*border-top-left-radius: 10px; */ /*به جاش به بالای اور فلو دادم ! */
   overflow: hidden;
   padding-bottom: 10px;
+}
+
+/* Merge shared color settings */
+div.call i,
+div.call p {
+  color: var(--text);
 }
 
 div.call i {
   display: block;
   padding-right: 10px;
 }
+
 div.call p {
   display: inline-block;
   padding-right: 5px;
