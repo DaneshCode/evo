@@ -1,4 +1,19 @@
-* {
+/* Core Styles */
+:root {
+  --primary-color: #288ed9;
+  --secondary-color: #026db9;
+  --text-color: #4a5568; /* Darker text for better readability */
+  --background-light: #f7fafc; /* Lighter background */
+  --border-radius: 0.75rem; /* Rounded corners */
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  --transition-duration: 0.2s; /* Faster transitions */
+  --header-height: 60px; /* Increased header height */
+}
+
+/* Base Reset */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,270 +26,362 @@
 
 body {
   font-family: Yekan, Arial, Helvetica, sans-serif;
-  display: flex;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-light); /* Apply light background */
 }
 
+/* General Layout */
 .container {
+  max-width: 1200px; /* Adjusted container width */
   margin: 0 auto;
-  width: 1400px;
+  padding: 1rem;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  display: block; /* Remove extra space below images */
 }
 
+/* Header Styles */
 .header {
   display: flex;
-  height: 50px;
+  align-items: center;
   justify-content: space-between;
-  margin: 20px auto;
+  height: var(--header-height);
+  padding: 0 1rem;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.header .right {
+.header .right,
+.header .left {
   display: flex;
   align-items: center;
 }
 
 .header .right a {
-  padding-right: 40px;
-  color: #999;
+  padding: 0.5rem 1rem;
+  color: var(--text-color);
   text-decoration: none;
+  transition: color var(--transition-duration) ease;
 }
 
 .header .right a:hover {
-  color: #288ed9;
-}
-.header img {
-  width: 120px;
-  height: 50px;
-  margin-left: 50px;
+  color: var(--primary-color);
 }
 
-.header .left {
-  display: flex;
-  align-items: center;
+.header img {
+  width: auto;
+  height: 40px;
+  margin-left: 1rem;
 }
+
 .header .left a {
-  margin: 20px;
-  color: #288ed9;
+  margin: 0 0.5rem;
+  color: var(--primary-color);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color var(--transition-duration) ease;
 }
 
 .header .left a:hover {
-  color: #026db9;
+  color: var(--secondary-color);
 }
 
-.header .left .button {
-  background-color: #288ed9;
-  padding: 5px 20px;
+.button {
+  background-color: var(--primary-color);
+  border: none;
   color: white;
-  border-radius: 30px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  transition: background-color var(--transition-duration) ease;
 }
 
-.header .left .button:hover {
-  background-color: #026db9;
-  color: #fff;
+.button:hover {
+  background-color: var(--secondary-color);
+  color: white;
 }
 
+/* Hero Section */
 .firstMain {
   display: flex;
-  margin: 50px auto;
-  justify-content: space-between;
+  padding: 2rem 0;
+  gap: 2rem;
 }
 
 .firstMain .right {
-  width: 40%;
-  margin: 50px 0;
+  flex: 1;
 }
 
 .firstMain .right p {
-  color: #666666;
+  color: var(--text-color);
   text-align: justify;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 1.1rem;
+  line-height: 1.7;
 }
 
 .firstMain .right p span {
-  color: #288ed9;
+  color: var(--primary-color);
   display: block;
-  margin: 10px auto;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .firstMain .left {
-  width: 55%;
+  flex: 1;
 }
 
+/* Content Section */
 .content {
-  background: linear-gradient(
-    to bottom,
-    rgba(214, 238, 255, 0) 0,
-    #d6eeff 100%
-  );
-  border-radius: 20px;
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  color: var(--primary-color);
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .secondMain {
-  display: flex;
-  padding: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
 }
 
 .secondMain .item {
-  position: relative;
+  background: var(--background-light);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+  transition: transform var(--transition-duration) ease;
 }
 
-.secondMain .item p {
-  text-align: justify;
-  padding: 50px 0px 50px 50px;
-  color: #666666;
-  border: 1px lightgray solid;
-  padding: 50px 10px 50px 10px;
-  border-radius: 10px;
-  margin: 0 10px;
+.secondMain .item:hover {
+  transform: translateY(-0.25rem);
 }
 
 .secondMain .item h2 {
-  position: absolute;
-  width: 150px;
-  background-color: #288ed9;
   color: white;
+  background-color: var(--primary-color);
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
   text-align: center;
-  padding: 5px 10px;
-  border-radius: 30px;
-  top: -20px;
-  margin: auto;
-  right: 0;
-  left: 0;
 }
 
-.secondMain .item h2:hover {
-  background-color: #026db9;
+.secondMain .item p {
+  color: var(--text-color);
+  text-align: justify;
 }
 
+/* Service Sections */
 .thirdMain {
-  display: block;
+  display: grid;
+  gap: 2rem;
+}
+
+.hostAbri,
+.anvaHost,
+.hostAshteraki,
+.hostWordpress {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.hostAbri .right,
+.anvaHost .left,
+.hostAshteraki .right,
+.hostWordpress .left {
+  flex: 1;
+  text-align: justify;
+}
+
+.hostAbri .left,
+.anvaHost .right,
+.hostAshteraki .left,
+.hostWordpress .right {
+  flex: 1;
 }
 
 .thirdMain h1 {
-  color: #288ed9;
-  padding-bottom: 20px;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
 }
 
-.hostAbri {
-  display: flex;
-  margin: 200px 0;
-  text-align: center;
-  padding: 20px 50px;
-}
-
-.hostAbri .right {
-  width: 50%;
-  text-align: justify;
-  line-height: 27px;
-}
-
-.hostAbri .left {
-  width: 50%;
-}
-
-.anvaHost {
-  display: flex;
-  margin: 200px 0;
-  text-align: center;
-  padding: 20px 50px;
-}
-
-.anvaHost .right {
-  width: 50%;
-}
-
-.anvaHost .left {
-  width: 50%;
-  text-align: justify;
-  line-height: 27px;
-}
-
-.hostAshteraki {
-  display: flex;
-  margin: 200px 0;
-  text-align: center;
-  padding: 20px 50px;
-}
-
-.hostAshteraki .right {
-  width: 50%;
-  text-align: justify;
-  line-height: 27px;
-}
-
-.hostAshteraki .left {
-  width: 50%;
-}
-
-.hostWordpress {
-  display: flex;
-  margin: 200px 0;
-  text-align: center;
-  padding: 20px 50px;
-}
-
-.hostWordpress .right {
-  width: 50%;
-}
-
-.hostWordpress .left {
-  width: 50%;
-  text-align: justify;
-  line-height: 27px;
-}
-
+/* Footer Styles */
 .footer {
-  height: 100px;
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: var(--background-light);
+}
+
+.footer hr {
+  margin-bottom: 1rem;
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer li a {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--transition-duration) ease;
+}
+
+.footer li a:hover {
+  color: var(--secondary-color);
+}
+
+.call p {
+  color: var(--text-color);
+  transition: color var(--transition-duration) ease;
+}
+
+.call p:hover {
+  color: var(--secondary-color);
+}
+
+/* Mobile Menu Styles */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Back to Top Button */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: none;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* FAQ Section */
+.faq-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.faq-item {
+  background: var(--background-light);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+}
+
+.faq-item h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Form */
+.contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+}
+
+/* Testimonials Section */
+.testimonials-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.testimonial-item {
+  background: var(--background-light);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+}
+
+.testimonial-author {
+  font-style: italic;
+  text-align: right;
+}
+
+/* Pricing Table Section */
+.pricing-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.pricing-plan {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
   text-align: center;
 }
 
-.footer li {
-  list-style-type: none;
-  margin: 0;
+.pricing-price {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.pricing-plan ul {
+  list-style: none;
   padding: 0;
-  display: inline-block;
-  font-size: 40px;
-  padding: 10px;
-  color: #288ed9;
-  text-decoration: none;
+  margin-bottom: 1rem;
 }
 
-.footer li:hover {
-  color: #026db9;
+.pricing-plan li {
+  margin-bottom: 0.5rem;
 }
 
-@media screen and (max-width: 1200px) {
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
   .container {
-    width: 90%;
-    padding: 0 10px;
+    max-width: 960px;
   }
 
   .firstMain {
     flex-direction: column;
-    align-items: center;
-  }
-
-  .firstMain .right,
-  .firstMain .left {
-    width: 100%;
-    margin: 20px 0;
-  }
-
-  .secondMain {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .secondMain .item {
-    width: 100%;
-    margin: 20px 0;
   }
 
   .hostAbri,
@@ -282,86 +389,69 @@ img {
   .hostAshteraki,
   .hostWordpress {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
 
   .hostAbri .right,
-  .hostAbri .left,
-  .anvaHost .right,
   .anvaHost .left,
   .hostAshteraki .right,
+  .hostWordpress .left,
+  .hostAbri .left,
+  .anvaHost .right,
   .hostAshteraki .left,
-  .hostWordpress .right,
-  .hostWordpress .left {
-    width: 100%;
-    margin: 20px 0;
+  .hostWordpress .right {
+    text-align: center;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .header {
-    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    padding: 0.5rem 1rem;
   }
 
   .header .right,
   .header .left {
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    text-align: center;
-    margin: 10px 0;
-  }
-
-  .header .left {
-    flex-direction: row;
+    margin: 0.5rem 0;
+    align-items: center;
+    margin: 0;
   }
 
   .header img {
-    margin: 10px 0;
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 
-  .header a {
-    padding: 0.5rem 0;
+  .menu-toggle {
+    display: block;
   }
 
-  .firstMain {
-    margin-top: 20rem;
-  }
-
-  .firstMain,
-  .secondMain,
-  .hostAbri,
-  .anvaHost,
-  .hostAshteraki,
-  .hostWordpress {
+  .main-nav {
+    display: none;
     flex-direction: column;
-    align-items: center;
-  }
-
-  .firstMain .right,
-  .firstMain .left,
-  .secondMain .item,
-  .hostAbri .right,
-  .hostAbri .left,
-  .anvaHost .right,
-  .anvaHost .left,
-  .hostAshteraki .right,
-  .hostAshteraki .left,
-  .hostWordpress .right,
-  .hostWordpress .left {
+    position: absolute;
+    top: var(--header-height);
+    right: 0;
+    background-color: white;
     width: 100%;
-    margin: 20px 0;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
   }
 
-  .footer {
-    flex-direction: column;
-    align-items: center;
+  .main-nav a {
+    padding: 0.75rem 1rem;
+    display: block;
+    text-align: center;
   }
 
-  .footer li {
-    font-size: 20px;
-    margin: 5px 0;
+  .main-nav.active {
+    display: flex;
   }
 }
