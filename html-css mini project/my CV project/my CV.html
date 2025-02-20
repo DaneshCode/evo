@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html data-theme="dark" lang="en">
   <head>
-    <title>Dani's Resume</title>
+    <title>Danesh's Resume</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
       content="Professional CV of Danesh khodadad - Front End Developer"
     />
+    <link rel="preload" href="styles.css" as="style" />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,22 +23,26 @@
       rel="stylesheet"
     />
   </head>
-  <body class="body-light">
+  <body>
     <!-- Add loader -->
-    <div class="loader"></div>
-    <button class="theme-toggle" onclick="toggleTheme()">
+    <div class="loader" aria-hidden="true"></div>
+    <button
+      class="theme-toggle"
+      onclick="toggleTheme()"
+      aria-label="Toggle theme"
+    >
       <i class="fas fa-moon"></i>
     </button>
     <!-- Page Container -->
-    <div class="content margin-top" style="max-width: 1400px">
+    <main class="content" style="max-width: 1400px">
       <!-- The Grid -->
       <div class="row-padding">
         <!-- Left Column -->
         <div class="column-third">
-          <div class="card card-white text-grey">
+          <div class="card">
             <div class="display-container">
               <img src="Avatar.jpg" style="width: 100%" alt="Avatar" />
-              <div class="display-bottomleft container text-black">
+              <div class="container">
                 <h3>Danesh khodadad</h3>
               </div>
             </div>
@@ -76,31 +83,18 @@
                 >
               </p>
               <p>HTML</p>
-              <div class="light-grey round-xlarge small">
-                <div
-                  class="container center round-xlarge teal"
-                  style="width: 90%"
-                >
-                  90%
-                </div>
+              <div class="light-grey">
+                <div class="container teal" style="width: 90%">90%</div>
               </div>
               <p>css</p>
-              <div class="light-grey round-xlarge small">
-                <div
-                  class="container center round-xlarge teal"
-                  style="width: 90%"
-                >
-                  <div class="center text-white">90%</div>
+              <div class="light-grey">
+                <div class="container teal" style="width: 90%">
+                  <div class="text-white">90%</div>
                 </div>
               </div>
               <p>Java Script</p>
-              <div class="light-grey round-xlarge small">
-                <div
-                  class="container center round-xlarge teal"
-                  style="width: 80%"
-                >
-                  80%
-                </div>
+              <div class="light-grey">
+                <div class="container teal" style="width: 80%">80%</div>
               </div>
               <br />
               <p class="large text-theme">
@@ -110,11 +104,8 @@
                 >
               </p>
               <p>English</p>
-              <div class="light-grey round-xlarge">
-                <div
-                  class="round-xlarge teal"
-                  style="height: 24px; width: 50%"
-                ></div>
+              <div class="light-grey">
+                <div class="teal" style="height: 24px; width: 50%"></div>
               </div>
               <br />
             </div>
@@ -126,8 +117,8 @@
 
         <!-- Right Column -->
         <div class="column-twothird">
-          <div class="container card card-white margin-bottom">
-            <h2 class="text-grey padding-16">
+          <div class="container card">
+            <h2>
               <i
                 class="fa fa-suitcase fa-fw margin-right icon-large text-teal"
               ></i
@@ -145,8 +136,8 @@
             </div>
           </div>
 
-          <div class="container card card-white">
-            <h2 class="text-grey padding-16">
+          <div class="container card">
+            <h2>
               <i
                 class="fa fa-certificate fa-fw margin-right icon-large text-teal"
               ></i
@@ -158,7 +149,6 @@
                 <i class="fa fa-calendar fa-fw margin-right"></i>Forever
               </h6>
               <p>Web Development Learning Platform</p>
-              <hr />
             </div>
             <div class="container">
               <h5 class="opacity"><b>Zand University</b></h5>
@@ -166,7 +156,6 @@
                 <i class="fa fa-calendar fa-fw margin-right"></i>2022 - Current
               </h6>
               <p>Student Engineering Computer</p>
-              <hr />
             </div>
             <div class="container">
               <h5 class="opacity"><b>Allameh Helli High Schools</b></h5>
@@ -183,9 +172,9 @@
           </button>
         </div>
       </div>
-    </div>
+    </main>
 
-    <footer class="container bg-teal center margin-top">
+    <footer class="container bg-teal">
       <p>Find me on social media.</p>
 
       <a
@@ -226,50 +215,50 @@
     </footer>
 
     <script>
+      const html = document.documentElement;
+      const themeToggle = document.querySelector('.theme-toggle i');
+      const loader = document.querySelector('.loader');
+
+      // Theme handling
       const savedTheme = localStorage.getItem('theme') || 'dark';
-      document.documentElement.setAttribute('data-theme', savedTheme);
+      html.setAttribute('data-theme', savedTheme);
 
       function toggleTheme() {
-        const html = document.documentElement;
-        const currentTheme = html.getAttribute('data-theme');
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-
+        const newTheme =
+          html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
         html.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
-
-        const themeIcon = document.querySelector('.theme-toggle i');
-        themeIcon.className =
-          newTheme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+        themeToggle.className = `fas fa-${
+          newTheme === 'light' ? 'moon' : 'sun'
+        }`;
       }
 
-      // Loading animation
-      window.addEventListener('load', () => {
-        document.querySelector('.loader').classList.add('hidden');
-      });
+      // Performance optimizations
+      window.addEventListener('load', () => loader.classList.add('hidden'));
 
-      // Copy email
-      function copyEmail() {
-        const email = document.getElementById('email').textContent;
-        navigator.clipboard.writeText(email);
+      // Utility functions
+      const copyEmail = () => {
+        navigator.clipboard.writeText(
+          document.getElementById('email').textContent,
+        );
         alert('Email copied!');
-      }
+      };
 
-      // Download CV
-      function downloadCV() {
-        window.print();
-      }
+      const downloadCV = () => window.print();
 
-      // Simple typing effect
-      const text = 'Front End Developer';
-      const element = document.querySelector('.typing');
-      let index = 0;
+      // Typing effect
+      const typeText = () => {
+        const element = document.querySelector('.typing');
+        const text = 'Front End Developer';
+        let index = 0;
 
-      function type() {
-        element.textContent = text.slice(0, index++);
-        if (index <= text.length) setTimeout(type, 100);
-      }
+        (function type() {
+          element.textContent = text.slice(0, index++);
+          if (index <= text.length) setTimeout(type, 100);
+        })();
+      };
 
-      type();
+      typeText();
     </script>
   </body>
 </html>

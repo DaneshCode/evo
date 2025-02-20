@@ -23,35 +23,32 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.body-light {
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background-color: var(--background);
   color: var(--text);
   line-height: 1.6;
 }
 
 .content {
-  max-width: 1200px;
+  max-width: min(1400px, 95%);
   margin: 0 auto;
-  padding: 2rem;
+  padding: clamp(0.5rem, 2vw, 2rem);
 }
 
 .row-padding {
   display: flex;
-  gap: 2rem;
+  gap: clamp(1rem, 2vw, 2rem);
   flex-wrap: wrap;
 }
 
 .column-third {
-  flex: 1;
-  min-width: 300px;
+  flex: 1 1 300px;
 }
-
 .column-twothird {
-  flex: 2;
-  min-width: 400px;
+  flex: 2 1 400px;
 }
 
 .card {
@@ -60,9 +57,18 @@
   box-shadow: var(--shadow);
   transition: var(--transition);
   margin-bottom: 1.5rem;
-  overflow: hidden;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .card:hover {
@@ -185,43 +191,7 @@ h6 {
 
   .column-third,
   .column-twothird {
-    width: 100%;
-    min-width: auto;
-  }
-
-  .content {
-    padding: 1rem;
-  }
-
-  .theme-toggle {
-    top: 0.5rem;
-    right: 0.5rem;
-    width: 35px;
-    height: 35px;
-  }
-
-  .display-container img {
-    height: 250px;
-  }
-
-  .container {
-    padding: 1rem;
-  }
-
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 95%;
-  }
-
-  .large {
-    font-size: 1rem;
-  }
-
-  .teal {
-    padding: 0.15rem;
+    flex: 1 1 100%;
   }
 }
 
@@ -313,34 +283,6 @@ html {
 [data-theme='dark'] .theme-toggle {
   color: var(--white);
   background: var(--primary);
-}
-
-/* Enhanced Progress Bars */
-.teal {
-  animation: progressBar 1.5s ease-in-out;
-  animation-fill-mode: both;
-}
-
-@keyframes progressBar {
-  0% {
-    width: 0;
-  }
-}
-
-/* Card Animations */
-.card {
-  animation: fadeIn 0.5s ease-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* Print Styles */
